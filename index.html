@@ -23,6 +23,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
 }
 
+
 /* BODY
 =============================================================================*/
 
@@ -31,9 +32,9 @@ body {
   font-size: 14px;
   line-height: 1.6;
   color: #333;
-  background-color: #fff;
-  padding: 20px;
-  max-width: 960px;
+  background-color: #F5F5F5;
+  
+  max-width:100%;
   margin: 0 auto;
 }
 
@@ -287,6 +288,22 @@ table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
 
+.main{
+	box-shadow: 0 0 5px 5px #ccc;
+	width:75%;
+	padding:20px;
+	margin:20px;
+	background:white;
+
+}
+.menu{
+	width:200px;
+	
+	box-shadow: 0 0 5px 5px #ccc;
+	float:right;margin-right:50px;
+	background:white;
+}
+
 /* IMAGES
 =============================================================================*/
 
@@ -296,15 +313,30 @@ img {
 </style>
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">古文源的个人博客</h1>
-      <h2 class="project-tagline">ahaha</h2>
-      <a href="https://github.com/gwy661020/mybokes" class="btn">View on GitHub</a>
-      <a href="https://github.com/gwy661020/mybokes/zipball/master" class="btn">Download .zip</a>
+    <section class="page-header" style="background:#F4655F;">
+      <h1 class="project-name"><font color="white">GWYBLOG</font></h1>
+      <h2 class="project-tagline">一个有情怀的网站</h2>
+      <a href="https://github.com/gwy661020/mybokes" class="btn">首页</a>
+      <a href="https://github.com/gwy661020/mybokes/zipball/master" class="btn">数据库性能优化</a>
       <a href="https://github.com/gwy661020/mybokes/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
-   <h1>数据库性能调优</h1>
+
+
+
+<!-- 内容主体 -->
+<div class="body">
+<div class="menu">
+	<p>近期文章</p>
+	<hr style="color:red;">
+	<p style="margin-left:20px;"><a href="">数据库性能调优</a></p>			
+	<p style="margin-left:20px;"><a href="">									从HTTP协议角度看GET与POST请求的区别
+</a></p>		
+
+</div>   
+
+<div class="main">
+   <center><h1>数据库性能调优</h1></center>
 <p>数据库调优，就好比盖楼打地基，地基打得不稳，楼层一高，就会塌方。数据库也是如此，数据少，并发小，隐藏的问题是发现不了的，只要达到一定规模后，所有的问题就会全部曝露出来了，所以前期的设计阶段尤为重要。</p>
 <h2>数据库优化分类</h2>
 <ul>
@@ -732,6 +764,6 @@ explain select * from user where email = 'jack@qq.com'; //用不到索引
 </li>
 </ul>
 
-  
+</div>	
   </body>
 </html>
