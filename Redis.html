@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mybokes by 古文源</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/new.css" media="all"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=2159" />
+    <link rel="stylesheet" href="css/zxbj_base.css?v=2818" />
+    <link rel="stylesheet" href="css/jm0203.css" />
+    <style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; 
+}
+
+.m-nav-ul .nav_li:nth-child(3) a.erji_a {
+  color: #F66000;
+}
+.m-nav-ul .nav_li:nth-child(3) a.triangle {
+  border-color: #F66000;
+}
+.m-top_user li a {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+.m-erjinav-ul {
+  margin-top: 25px;
+}
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #F5F5F5;
+  
+  max-width:100%;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.main{
+  box-shadow: 0 0 5px 5px #ccc;
+  width:70%;
+  padding:20px;
+  margin:20px;
+  background:white;
+ 
+
+}
+.menu{
+  width:20%;
+  
+  box-shadow: 0 0 5px 5px #ccc;
+  float:right;margin-right:1%;
+  background:white;
+}
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+  </head>
+  <body>
+    <section class="page-header" style="background:#F4655F;">
+      <h1 class="project-name"><font color="white">GWYBLOG</font></h1>
+      <h2 class="project-tagline">一个有情怀的网站</h2>
+      <a href="Redis.html" class="btn">认识REDIS</a>
+      <a href="index.html" class="btn">数据库性能优化</a>
+      <a href="wechat.html" class="btn">微信开发</a>
+    </section>
+
+
+
+
+<!-- 内容主体 -->
+<div class="body" >
+
+<div class="menu">
+	<p>近期文章</p>
+	<hr style="color:red;">
+	<p style="margin-left:20px;"><a href="index.html">数据库性能调优</a></p>			
+	<p style="margin-left:20px;"><a href="Redis.html">Redis的简单认识
+</a></p>		
+
+</div>   
+
+<div class="main">
+	 
+ <h2>数据库</h2>
+<p>MySQL是关系型数据库，数据存放到硬盘中。读取速度受硬盘转速限制。</p>
+<p>关系型数据库是由一张张二维表组成，二维表是Excel表格的。</p>
+<p>读取速度都是很快的=》内存</p>
+<p>memcached存放数据无法持久化（将数据写到硬盘中）。</p>
+<p>Redis数据也是存放到内存中，所以速度快。并且数据可以周期性写到硬盘中，Redis数据可以持久化。</p>
+<p>Redis是使用C语言写的。</p>
+<h2>Redis语法</h2>
+<p>Redis有五种数据类型，字符串、集合（交集、并集、差集）、有序集、合、list(双向链表)、hash</p>
+<p>交集：  {a,b,c} n  {b,c} = {b,c}</p>
+<p>并集：  {a,b,c} U  {b,c,d} = {a,b,c,d}</p>
+<p>差集：  {a,b,c} - {b,d}  =  {a}</p>
+<h2>每一种数据类型都对应上不同的命令</h2>
+<h2>字符串命令</h2>
+<p>//将值存放到内存，根据键名可以找到
+  set 键名   值</p>
+<p>get 键名</p>
+<pre><code>//如果数据库存在一个键，就设置失败，不存在才设置成功
+</code></pre>
+
+<p>setnx 键名  值</p>
+<p>//ex  expire 有效期
+  SETEX key seconds value</p>
+<h2>切换数据库</h2>
+<p>默认情况选择数据库是 0</p>
+<p>切换数据库  select 1</p>
+<h2>其他命令</h2>
+<p>//切换数据库
+  select 1</p>
+<p>//查看当前数据库有哪些键
+  keys *</p>
+<h2>数据结构</h2>
+<ol>
+<li>
+<p>栈</p>
+<p>特点： 先进后出</p>
+</li>
+<li>
+<p>队列(消息队列)</p>
+<p>队列其实就是排队。
+特点：  先进先出</p>
+</li>
+<li>
+<p>链表</p>
+<p>双向链表/单向链表、循环链表</p>
+<p>单向链表： A =&gt;  B =&gt; C =&gt; D</p>
+</li>
+</ol>
+<p>双向链表  ：  A &lt;=&gt;  B &lt;=&gt; C &lt;=&gt; D</p>
+<p>循环链表：  A &lt;=&gt;  B &lt;=&gt; C &lt;=&gt; D &lt;=&gt;  A</p>
+<h2>复习(redisdoc.com)</h2>
+<p>Redis是一个key-value数据库，数据保存内存中，读取速度快。Redis数据可以持久化(写磁盘中)。 </p>
+<p>五种数据类型： 字符串、集合、有序集合、hash,list</p>
+<h2>字符串命令</h2>
+<p>set  key  value</p>
+<p>get   key</p>
+<p>setnx   key  value</p>
+<p>setex  key  time   value</p>
+<p>mset key1  v1   k2  v2  ....</p>
+<p>mget  k1  k2 ...</p>
+<p>//每次加1
+  incr   key</p>
+<p>incrby  num  2</p>
+<p>incrby num -1  // decr num</p>
+<p>APPEND key value
+ 给key的键值尾部添加值</p>
+<p>STRLEN key
+ 获取key值的长度</p>
+<h2>其他命令</h2>
+<p>//查看数据库所有的键
+  keys *</p>
+<p>//切换数据库
+ select 1</p>
+<p>//查看key的类型
+  type key</p>
+<h2>PHP操作Redis两个扩展</h2>
+<ol>
+<li>
+<p>phpredis</p>
+<pre><code>这个是使用C语言写的，速度相对快，在Linux下需要编译安装。Window下安装的是.dll文件
+</code></pre>
+
+</li>
+<li>
+<p>predis</p>
+<p>这个是使用PHP语言写的，安装：直接将predis放到你项目中就行了。</p>
+</li>
+</ol>
+<h2>文章对象</h2>
+<p>标题： 1
+  内容：  2
+  作者：  jack</p>
+<p>hset article  title   1</p>
+<p>hset article   content 2</p>
+<p>hset article    author  jack</p>
+<p>只想要标题：</p>
+<p>hget  article   title </p>
+<h2>商城大促(双11)</h2>
+<p>一件热门商品（库存10件）同时被几万人抢购， 面临的问题： 1、 数据库读写速度快  2、 并发量高，消息队列。</p>
+<h2>list相关命令</h2>
+<p>//在key左边放进去一个val值
+  lpush key  val</p>
+<p>//从key的左边拿出一个元素
+  lpop key  
+</p>
+<p>//往keyde 右边放进去一个val
+  rpush  key  val</p>
+<p>rpop  key </p>
+<p>list是一个双向链表结构。意味着可以在两头操作元素</p>
+<p>A &lt;=&gt;  B  &lt;=&gt;  C  &lt;=&gt;   D   ...  &lt;=&gt;  E</p>
+<p>list特点：越靠近两端的元素，读取速度越快。</p>
+<p>利用list特点：将一些热数据放到list两端。</p>
+<p>栈：  先进后出
+  队列： 先进先出</p>
+<p>左                  右</p>
+<pre><code>C  B    A 
+</code></pre>
+
+<p>在左边先把A放进去，B  C </p>
+<p>栈：  先拿C,B , A</p>
+<p>让在左边取数据</p>
+<p>栈： 只要在同一边放、取就是栈。</p>
+<p>队列： 在一边放数据，另外一边取数据就是队列。</p>
+<h2></h2>
+
+
+  </body>
+</html>
